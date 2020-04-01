@@ -46,9 +46,9 @@ services:
     prosody:
         image: jitsi/prosody
         expose:
-            - '5222'
-            - '5347'
-            - '5280'
+            - '5222:5222'
+            - '5347:5347'
+            - '5280:5280'
         volumes:
             - ${CONFIG}/prosody:/config
         environment:
