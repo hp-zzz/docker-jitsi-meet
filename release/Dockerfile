@@ -16,6 +16,10 @@ ADD ./jitsi-meet/images/logo2.png                   /usr/share/jitsi-meet/images
 ADD ./jitsi-meet/lang/main-zhCN.json		    /usr/share/jitsi-meet/lang/main-zhCN.json
 ADD ./jitsi-meet/lang/main.json			    /usr/share/jitsi-meet/lang/main.json
 
+ADD ./nginx/nginx.conf					/defaults/nginx.conf
+ADD ./nginx/default					/defaults/default
+
+
 EXPOSE 80 443
 
 VOLUME ["/config", "/DEV_DIR", "/etc/letsencrypt"]

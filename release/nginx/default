@@ -1,6 +1,15 @@
 server {
 	listen 80 default_server;
 
+	
+	if ($request_uri ~* ".(ico|css|js|gif|jpe?g|png)$") {
+		expires 30d;
+		access_log off;
+		add_header Pragma public;
+		add_header Cache-Control "public";
+		break;
+	}
+
 	{{ if .Env.ENABLE_HTTP_REDIRECT | default "0" | toBool }}
 	return 301 https://$host$request_uri;
 	{{ else }}
