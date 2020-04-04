@@ -1,0 +1,250 @@
+body {
+    overflow: hidden;
+    font-size: 0.833vw;
+}
+
+body.welcome-page {
+    overflow: hidden;
+}
+
+#welcome_page {
+    background: linear-gradient(#0C7390, #183768);
+}
+
+.leftwatermark {
+    background-image: url(../images/logo1.png);
+    display: none !important;
+}
+
+.welcome .header .header-text {
+    margin-top: 20vh;
+    letter-spacing: 0.781vw;
+}
+
+.welcome .header .header-text-title {
+    font-size: 2vw !important;
+    font-weight: 600 !important;
+}
+
+.welcome .header .header-text-description {
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.add-icon {
+    width: 5.208vw;
+    height: 5.208vw;
+    margin: 0 auto;
+}
+
+#enter_room_field {
+    outline: none;
+    background: transparent;
+}
+
+#enter_room_field::placeholder {
+    display: none !important;
+    color: transparent !important;
+    opacity: 0;
+}
+
+.welcome .header #enter_room .enter-room-input-container {
+    width: 90%;
+    margin-right: 10%;
+    border-image: none;
+    border-color: #0F6789;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#enter_room_button {
+    width: 10.41vw;
+    background-color: #105A7D;
+    border-radius: 0;
+    animation: slowShow 1s;
+}
+
+@keyframes slowShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome .welcome-page-button {
+    height: 2.343vw;
+    line-height: 2.343vw;
+    font-size: 0.8vw;
+}
+
+.welcome .header #enter_room {
+    padding: 1.562vw;
+    background: #D9DBE1 !important;
+    width: 40vw !important;
+    box-sizing: border-box;
+}
+
+
+.welcome .header .tab-container {
+    width: 40vw !important;
+    box-sizing: border-box;
+}
+
+.welcome .header .tab-container {
+    background-color: transparent;
+}
+
+.welcome .header .tab-container {
+    width: 38.54vw;
+}
+
+.welcome .header .tab-container .tab-content {
+    margin: 1.302vw 0
+}
+
+.meetings-list .item.with-click-handler {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding: 1.041vw !important;
+    background-color: #D9DBE1;
+    line-height: 1vw;
+}
+
+.actions {
+    display: none;
+}
+
+.meetings-list {
+    flex-direction: row;
+    height: 7.812vw;
+    overflow: hidden;
+    justify-content: center !important;
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 7.812vw;
+        opacity: 1;
+    }
+}
+
+.meetings-list .item.with-click-handler {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.520vw;
+}
+
+.item.with-click-handler {
+    margin-right: 0.520vw;
+}
+
+.item.with-click-handler:last-child {
+    margin-right: 0;
+}
+
+.meetings-list .item {
+    max-width: 33%;
+}
+
+.meetings-list .item:first-child {
+    margin-top: 0.260vw;
+    font-size: 0.833vw !important
+}
+
+.meetings-list .item .right-column {
+    padding: 0;
+}
+
+.meetings-list .item .right-column .title {
+    margin-right: 0.520vw;
+    font-size: 0.833vw !important;
+}
+
+.meetings-list .item .right-column .title~span {
+    float: right;
+    font-size: 0.7vw !important;
+}
+
+.meetings-list .item .right-column .title::after {
+    content: " 会议";
+    margin-left: 10px;
+}
+
+.meetings-list .item .left-column {
+    padding: 0;
+    font-size: 0.833vw;
+}
+
+.meetings-list .item .left-column .date {
+    margin-right: 0.520vw;
+    font-size: 0.833vw;
+}
+
+.styled__NavItem-sc-716rt7-5:last-child {
+    display: none;
+}
+
+.sc-ifAKCX.fqtRUK {
+    overflow: visible;
+}
+
+li.overflow-menu-item:nth-child(4) {
+    display: none !important;
+}
+
+li.overflow-menu-item:nth-child(5) {
+    display: none !important;
+}
+
+li.overflow-menu-item:last-child {
+    display: none !important;
+}
+
+.enter-room-title::after {
+    content: "(仅限数字与字母。)";
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.vertical-filmstrip .filmstrip #filmstripRemoteVideos {
+    flex-direction: column-reverse !important;
+    margin-top: 50px;
+}
+
+.vertical-filmstrip .filmstrip #filmstripRemoteVideos #filmstripRemoteVideosContainer {
+    flex-direction: column !important;
+}
+
+.toolbox-content .button-group-center .toolbox-button:nth-child(2) {
+    display: none !important;
+}
+
+.toolbox-content .button-group-right .toolbox-button:nth-child(2) {
+    display: none !important;
+}
+
+
+.toolbox-content .button-group-right .toolbox-button-wth-dialog:nth-child(3) {
+    display: none !important;
+}
